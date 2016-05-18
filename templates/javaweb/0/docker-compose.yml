@@ -1,14 +1,14 @@
-#LB-WEB:
-#  image: 192.168.10.118:5000/our/rancher/agent-instance:v0.8.0
-#  ports:
-#  - "8080"
-#  tty: true
-#  links:
-#  - javaweb:javaweb
-#  stdin_open: true
 javaweb:
   image: 192.168.10.118:5000/our/webjava:v2
   tty: true
   stdin_open: true
+#  ports:
+#    - "8080"
+LB-javaweb:
   ports:
-    - "8080"
+  - "8080"
+  image: rancher/load-balancer-service
+  tty: true
+  links:
+  - javaweb:javaweb
+  stdin_open: true
