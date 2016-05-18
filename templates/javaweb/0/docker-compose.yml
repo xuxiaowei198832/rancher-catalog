@@ -1,3 +1,11 @@
+LB-WEB:
+  image: rancher/load-balancer-service
+  ports:
+  - "8080"
+  tty: true
+  links:
+  - javaweb:javaweb
+  stdin_open: true
 javaweb:
   image: 192.168.10.118:5000/our/webjava:v2
   ports:
