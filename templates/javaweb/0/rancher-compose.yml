@@ -6,8 +6,8 @@
   uuid: javaweb-0
   question:
     - variable: "scale"
-        description: "容器数量"
-        label: "请选择容器数量"
+        description: "number of tomcat"
+        label: "tomcat number"
         required: true
         default: 2
         type: "init"
