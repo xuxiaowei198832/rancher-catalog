@@ -1,0 +1,6 @@
+.catalog:
+  name: javaweb
+  version: 10.0.0-rancher
+  description: |
+    JAVA_WEB
+  uuid: javaweb-0
