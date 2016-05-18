@@ -1,6 +1,6 @@
 .catalog:
   name: javaweb-cluster
-  version: "v1.0.0"
+  version: "v0.51.0"
   description: |
     JAVA_WEB
   uuid: javaweb-0
@@ -12,15 +12,15 @@
       required: true
       default: 1
       type: "int"
-#LB-WEB:
-#  scale: 1
-#  load_balancer_config:
-#    haproxy_config:｛｝
-#  health_check:
-#    port: 42
-#    interval: 2000
-#    unhealthy_threshold: 3
-#    healthy_threshold: 2
-#    response_timeout: 2000
 javaweb:
   scale: ${scale}
+LB-javaweb:
+  scale: 1
+  load_balancer_config:
+    haproxy_config: {}
+  health_check:
+    port: 42
+    interval: 2000
+    unhealthy_threshold: 3
+    healthy_threshold: 2
+    response_timeout: 2000
