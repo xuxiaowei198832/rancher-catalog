@@ -6,11 +6,11 @@
   uuid: javaweb-0
   questions:
     - variable: "scale"
-        description: "number of tomcat"
-        label: "tomcat numbers"
-        required: true
-        default: 2
-        type: "int"
+      description: "number of tomcat"
+      label: "tomcat numbers"
+      required: true
+      default: 2
+      type: "int"
 #LB-WEB:
 #  scale: 1
 #  load_balancer_config:
