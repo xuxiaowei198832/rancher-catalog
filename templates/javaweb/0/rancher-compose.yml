@@ -11,15 +11,15 @@
       required: true
       default: 2
       type: "int"
-#LB-WEB:
-#  scale: 1
-#  load_balancer_config:
-#    haproxy_config:｛｝
-#  health_check:
-#    port 42
-#    interval: 2000
-#    unhealthy_threshold: 3
-#    healthy_threshold: 2
-#    response_timeout: 2000
-#javaweb:
-#  scale: ${scale}
+LB-WEB:
+  scale: 1
+  load_balancer_config:
+    haproxy_config:｛｝
+  health_check:
+    port 42
+    interval: 2000
+    unhealthy_threshold: 3
+    healthy_threshold: 2
+    response_timeout: 2000
+javaweb:
+  scale: ${scale}
