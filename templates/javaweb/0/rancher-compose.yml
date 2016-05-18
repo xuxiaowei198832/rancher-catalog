@@ -1,6 +1,6 @@
 .catalog:
   name: javaweb-cluster
-  version: "v0.51.0"
+  version: 1.0.0
   description: |
     JAVA_WEB
   uuid: javaweb-0
