@@ -4,13 +4,13 @@
   description: |
     JAVA_WEB
   uuid: javaweb-0
-#  question:
-#    - variable: "scale"
-#        description: "容器数量"
-#        label: "请选择容器数量"
-#        required: true
-#        default: 2
-#        type: "init"
+  question:
+    - variable: "scale"
+        description: "容器数量"
+        label: "请选择容器数量"
+        required: true
+        default: 2
+        type: "init"
 #LB-WEB:
 #  scale: 1
 #  load_balancer_config:
