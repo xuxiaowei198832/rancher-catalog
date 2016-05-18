@@ -5,13 +5,12 @@
     JAVA_WEB
   uuid: javaweb-0
   minimum_rancher_version: v0.51.0
-  minimum_rancher_version: 
   questions:
     - variable: "scale"
       description: "number of tomcat"
       label: "tomcat numbers"
       required: true
-      default: 2
+      default: 1
       type: "int"
 LB-WEB:
   scale: 1
