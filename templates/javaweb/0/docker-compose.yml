@@ -5,8 +5,7 @@ javaweb:
 #  ports:
 #    - "8080"
 LB-javaweb:
-  ports:
-  - "8080"
+  ports: "8080"
   image: rancher/load-balancer-service
   tty: true
   links:
