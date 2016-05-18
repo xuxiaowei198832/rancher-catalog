@@ -1,10 +1,10 @@
 .catalog:
   name: javaweb-cluster
-  minimum_rancher_version: v1.0.0
-  version: v1.0.0
+  version: "v1.0.0"
   description: |
     JAVA_WEB
   uuid: javaweb-0
+  minimum_rancher_version: "v1.0.0"
   questions:
     - variable: "scale"
       description: "number of tomcat"
