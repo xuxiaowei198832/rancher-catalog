@@ -18,6 +18,18 @@
       required: true
 #      default: none
       type: "string"
+    - variable: "cpu"
+      description: "number of cpu"
+      label: "请输需要cpu数量"
+      required: true
+      default: 1
+      type: "int"
+    - variable: "mem"
+      description: "number of mem"
+      label: "请输需要的内存"
+      required: true
+      default: 2147483648
+      type: "int"
 javaweb:
   scale: ${scale}
 LB-javaweb:
