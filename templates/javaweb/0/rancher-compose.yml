@@ -8,7 +8,7 @@
   questions:
     - variable: "scale"
       description: "number of tomcat"
-      label: "tomcat numbers"
+      label: "请输入容器数量"
       required: true
       default: 1
       type: "int"
