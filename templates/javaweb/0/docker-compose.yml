@@ -2,6 +2,13 @@ javaweb:
   image: 192.168.10.118:5000/our/webjava:v3
   tty: true
   stdin_open: true
+  labels:
+    io.rancher.container.pull_image: always
+#  cpuset:
+  privileged: true
+  volumes:
+  - /rancher_data/public/${volumes}:/data
+  mem_limit: 2147483648
 #  ports:
 #    - "8080"
 LB-javaweb:
