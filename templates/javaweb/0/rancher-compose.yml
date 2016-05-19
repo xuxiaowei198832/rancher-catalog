@@ -12,6 +12,12 @@
       required: true
       default: 1
       type: "int"
+    - variable: "volumes"
+      description: "用户代码目录"
+      label: "请输入用户目录"
+      required: true
+#      default: none
+      type: "string"
 javaweb:
   scale: ${scale}
 LB-javaweb:
