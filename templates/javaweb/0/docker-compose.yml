@@ -4,11 +4,11 @@ javaweb:
   stdin_open: true
   labels:
     io.rancher.container.pull_image: always
-#  cpuset:
+  cpuset: ${cpu}
   privileged: true
   volumes:
   - /rancher_data/public/${volumes}:/data
-  mem_limit: 2147483648
+  mem_limit: ${mem}
 #  ports:
 #    - "8080"
 LB-javaweb:
