@@ -9,8 +9,8 @@ javaweb:
   volumes:
   - /rancher_data/public/${volumes}:/data
   mem_limit: ${mem}
-#  ports:
-#    - "8080"
+  ports:
+    - "8080"
 LB-javaweb:
   ports: 
     - "8080"
