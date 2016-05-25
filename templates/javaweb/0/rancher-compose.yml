@@ -6,32 +6,32 @@
   uuid: javaweb-0
   minimum_rancher_version: v0.51.0
   questions:
-#    - variable: "scale"
-#      description: "number of tomcat"
-#      label: "请输入容器数量"
-#      required: true
-#      default: 1
-#      type: "int"
+    - variable: "scale"
+      description: "how many tomcats you need"
+      label: "numbers of tomcat"
+      required: true
+      default: 1
+      type: "int"
     - variable: "volumes"
-      description: "用户代码目录"
-      label: "请输入用户目录"
+      description: "the dir for pull data"
+      label: "your dir"
       required: true
 #      default: none
       type: "string"
     - variable: "cpu"
-      description: "number of cpu"
-      label: "请输需要cpu数量"
+      description: "how many cpus you need"
+      label: "numbers of cpu"
       required: true
       default: 1
       type: "int"
     - variable: "mem"
-      description: "number of mem"
-      label: "请输需要的内存"
+      description: "how many mems you need"
+      label: "numbers of mem"
       required: true
       default: 2147483648
       type: "int"
 javaweb:
-  scale: 1
+  scale: ${scale}
 LB-javaweb:
   scale: 1
   load_balancer_config:
