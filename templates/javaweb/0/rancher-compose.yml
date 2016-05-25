@@ -6,12 +6,12 @@
   uuid: javaweb-0
   minimum_rancher_version: v0.51.0
   questions:
-    - variable: "scale"
-      description: "number of tomcat"
-      label: "请输入容器数量"
-      required: true
-      default: 1
-      type: "int"
+#    - variable: "scale"
+#      description: "number of tomcat"
+#      label: "请输入容器数量"
+#      required: true
+#      default: 1
+#      type: "int"
     - variable: "volumes"
       description: "用户代码目录"
       label: "请输入用户目录"
@@ -31,7 +31,7 @@
       default: 2147483648
       type: "int"
 javaweb:
-  scale: ${scale}
+  scale: 1
 LB-javaweb:
   scale: 1
   load_balancer_config:
